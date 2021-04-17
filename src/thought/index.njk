@@ -1,0 +1,13 @@
+---
+title: "Thoughts"
+layout: "base.njk"
+---
+
+<h2>Thoughts</h2>
+<ul>
+{% for post in thoughts %}
+    <li>
+        <a href="{{ post.slug.current | url }}">{{ post.title }}</a>
+    </li>
+{% endfor %}
+</ul>

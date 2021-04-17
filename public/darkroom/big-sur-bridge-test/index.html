@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or post.title }}</title>
-    <link rel="stylesheet" href="{{ 'css/style.css' | url }}">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>{{ renderData.title or title or post.title or metadata.title }}</h1>
+        <h1></h1>
     </header>
     <main>
-        {{ content | safe }}
+        <article>
+  <img src="https://cdn.sanity.io/images/wlyiqeoa/production/fb0cbbb663a3ebe2d78275c0755f672a3491b19c-4032x3024.png?w=500" alt=" Image Alt">
+</article>
     </main>
 </body>
 </html>
