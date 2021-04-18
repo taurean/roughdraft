@@ -7,7 +7,7 @@ layout: "base.njk"
 <ul>
 {% for post in darkroom %}
     <li>
-        <a href="{{ post.slug.current | url }}">{{ post.internalDocumentName }}</a>
+        <a href="/darkroom/{{ post.slug.current | url }}/">{{ post.internalDocumentName }}</a>
     </li>
 {% endfor %}
 </ul>
