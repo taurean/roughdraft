@@ -1,0 +1,13 @@
+---
+title: "Photos"
+layout: "base.njk"
+---
+
+<h2>Photos</h2>
+<ul>
+{% for post in darkroom %}
+    <li>
+        <a href="/darkroom/{{ post.slug.current | url }}/">{{ post.internalDocumentName }}</a>
+    </li>
+{% endfor %}
+</ul>
