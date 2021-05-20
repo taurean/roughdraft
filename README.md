@@ -8,9 +8,9 @@ Roughdraft is built with 11ty. Some quick commands to get going:
 
 1. `npm i`
 2. `npm run start`
-3. create a file named  `.env` in the root directory
+3. create a file named  `.env.development` in the root directory
 4. add an env variable value for `SANITY_PROJECT_ID` and `SANITY_DATASET`
-   * You can find this via the [Token Settings on Sanity.io](https://www.sanity.io/teams/personal/project/wlyiqeoa/settings#tokens)
+   * You can find this via the [Sanity.io project details](https://manage.sanity.io)
 5. … that should be it.
 
 ---
