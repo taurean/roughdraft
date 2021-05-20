@@ -1,0 +1,27 @@
+---
+title: "All feeds"
+layout: "base.njk"
+---
+
+<h2>Photos</h2>
+<ul>
+{% for post in darkroom %}
+    <li>
+        <a href="/darkroom/{{ post.slug.current | url }}/">{{ post.internalDocumentName }}</a>
+    </li>
+{% endfor %}
+</ul>
+
+<h2>Thoughts</h2>
+<ul>
+{% for post in thoughts %}
+    <li>
+        <a href="/thought/{{ post.slug.current | url }}/">{{ post.title }}</a>
+    </li>
+{% endfor %}
+</ul>
+<h2>Link Drop</h2>
+<ul></ul>
+<h2>Dev tips</h2>
+<ul></ul>
+<footer><p>Bring me back <a href="/">home</a>.</p></footer>
