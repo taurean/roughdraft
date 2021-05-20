@@ -5,11 +5,18 @@ const client = require('../utils/sanityClient.js')
 async function getPosts() {
     // Learn more: https://www.sanity.io/docs/data-store/how-queries-work
     const filter = groq `*[_type == "darkroomphoto" && published==true]{
-        "photoUrl": photo.asset->url,
-        internalDocumentName,
-        imageAlt,
-        slug
-        }`
+    "photoUrl": photo.asset->url,
+    internalDocumentName,
+    imageAlt,
+    slug,
+    geoLocation,
+    focalLength,
+    aperture,
+    iso,
+    sensorSize,
+    cameraBrand,
+    cameraModel
+    }`
     const projection = ``;
     const order = ``
     const query = [filter, projection, order].join(' ')

@@ -10,3 +10,39 @@ html,
 body {
   font-family: $typestack--body;
 }
+
+.darkroom {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkroom-figure {
+  width: 100%;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .darkroom-figure {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .darkroom-figure {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .darkroom-figure {
+    max-width: 50%;
+  }
+}
+
+.darkroom-photo {
+  width: 100%;
+}
