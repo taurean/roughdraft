@@ -1,6 +1,23 @@
 ---
 layout: base.njk
 ---
-<article>
-  <img src="{{ post.photoUrl }}?w=500" alt=" {{ post.imageAlt }}">
+<article class="darkroom">
+  <figure class="darkroom-figure">
+    <img class="darkroom-photo" src="{{ post.photoUrl }}?w=768" srcset="
+      {{ post.photoUrl }}?w=320 320w,
+      {{ post.photoUrl }}?w=768 768w,
+      {{ post.photoUrl }}?w=1024 1024w,
+      {{ post.photoUrl }}?w=1440 1440w,
+      {{ post.photoUrl }}?w=1600 1600w
+    "
+    >
+    <figcaption>
+      <div>Focal Length - {{ post.focalLength }}mm</div>
+      <div>aperture - f{{ post.aperture }}</div>
+      <div>iso - {{ post.iso }}</div>
+      <div>sensor Size - {{ post.sensorSize }}</div>
+      <div>camera Brand - {{ post.cameraBrand }}</div>
+      <div>camera Model - {{ post.cameraModel }}</div>
+    </figcaption>
+  </figure>
 </article>
